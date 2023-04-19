@@ -1,0 +1,11 @@
+.message{
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: white;
+    width: 80%;
+
+}
+.message:hover{
+    background-color: rgb(222, 215, 207);
+}

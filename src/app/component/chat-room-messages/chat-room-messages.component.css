@@ -4,8 +4,13 @@
     border: 1px solid black;
     background-color: white;
     width: 80%;
+    position: relative;
 
 }
 .message:hover{
     background-color: rgb(222, 215, 207);
+}
+.send-message{
+    position: relative;
+    top: 1rem;
 }

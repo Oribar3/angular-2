@@ -1,5 +1,8 @@
 <div>
     <h3>Messages</h3>
-    <div *ngFor="let message of messages" class="message">{{message.user.userName}} : {{message.message}}</div>
-    <app-chat-room-send-message class="send-message" (messageSend)="onSendMessage($event)" ></app-chat-room-send-message>
+    <div *ngFor="let message of messages" [ngClass]="{'my-message': message.user.userName==myUser.userName}"
+        class="message">{{message.user.userName}} : {{message.message}}
+        <span *ngIf=" message.user.userName==myUser.userName" (click)="removeMessage(message)">x</span>
+    </div>
+    <app-chat-room-send-message class="send-message" (messageSend)="onSendMessage($event)"></app-chat-room-send-message>
 </div>

@@ -1,0 +1,40 @@
+.container{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(192,192,192,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.private-message{
+    display: block;
+    width: 40vw;
+    min-height: 30vh;
+    border: 2px solid blue;
+    border-radius: 5px;
+    background-color: white;
+    padding: 1rem;
+    z-index: 11;
+}
+
+.userName{
+    font-weight: 700;
+}
+.message{
+    width: 90%;
+    resize: none;
+    padding: 0.5rem;
+
+}
+.button-send{
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+    border: none;
+    width: 20%;
+}

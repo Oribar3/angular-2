@@ -1,5 +1,6 @@
 <div>
     <h3>Users</h3>
     <app-chat-room-users-search (users_to_display)="onUserSearch($event)"></app-chat-room-users-search>
-    <div *ngFor="let user of usersToDisplay" class="user">{{user.userName}} </div>
+    <div *ngFor="let user of usersToDisplay ;let i =index" class="user" (click)="onClickUser(i)">{{user.userName}} </div>
 </div>
+<app-model-private-messeage (sendMessage)="onSendPrivateMessage()" *ngIf="isPrivateMessage" [user]="privateMessageUser"></app-model-private-messeage>

@@ -9,6 +9,7 @@ import { ChatRoomUsersComponent } from './component/chat-room-users/chat-room-us
 import { ChatRoomMessagesComponent } from './component/chat-room-messages/chat-room-messages.component';
 import { ChatRoomUsersSearchComponent } from './component/chat-room-users-search/chat-room-users-search.component';
 import { ChatRoomSendMessageComponent } from './component/chat-room-send-message/chat-room-send-message.component';
+import { ModelPrivateMesseageComponent } from './component/model-private-messeage/model-private-messeage.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ChatRoomSendMessageComponent } from './component/chat-room-send-message
     ChatRoomUsersComponent,
     ChatRoomMessagesComponent,
     ChatRoomUsersSearchComponent,
-    ChatRoomSendMessageComponent
+    ChatRoomSendMessageComponent,
+    ModelPrivateMesseageComponent
   ],
   imports: [
     BrowserModule

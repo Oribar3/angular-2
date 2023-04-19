@@ -11,11 +11,14 @@ export class ChatRoomSendMessageComponent {
   @Output() messageSend = new EventEmitter<string>
   message:string="";
   
+
   onInputMessage(event:any){
     this.message=event.target.value;
   }
+
   onSend(){
     if(this.message)
      this.messageSend.emit(this.message)
+     
   }
 }

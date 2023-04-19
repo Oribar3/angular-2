@@ -10,8 +10,14 @@ import { user } from 'src/app/models/user.model';
 export class ChatRoomMessagesComponent {
 @Input() messages:message[] | any
 @Input() myUser:user |any;
-
+myMessage=false;
+removeMessage(message:message){
+  for(let i=0;i<this.messages.length;i++){
+    if(this.messages[i]===message) this.messages.splice(i,1);
+  }
+}
  onSendMessage(event:any){
  this.messages.push({user:this.myUser, message:event})
  }
+
 }

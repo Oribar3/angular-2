@@ -5,6 +5,8 @@
     background-color: white;
     width: 80%;
     position: relative;
+    display: flex;
+    justify-content: space-between;
 
 }
 .message:hover{
@@ -13,4 +15,11 @@
 .send-message{
     position: relative;
     top: 1rem;
+}
+.my-message{
+    background-color: yellow;
+}
+span{
+color: red;  
+cursor: pointer;  
 }
